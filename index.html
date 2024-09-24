@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f2f2f2;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            text-align: center;
+            border: 2px solid black;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .header {
+            background-color: yellow;
+            font-size: 1.5em;
+            padding: 15px;
+            font-weight: bold;
+        }
+
+        .yellow {
+            background-color: yellow;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+
+        .gray {
+            background-color: lightgray;
+            white-space: nowrap;
+        }
+
+        td,
+        th {
+            width: 80px;
+        }
+
+        td.home {
+            background-color: pink;
+            color: black;
+            font-size: 1.3em;
+            font-weight: bold;
+            text-align: center;
+            vertical-align: middle;
+            width: 150px;
+        }
+
+        tfoot td {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="5" class="header">Final Examination Schedule - Fall 2008</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="yellow"></td>
+                <td class="yellow">Monday Dec. 15</td>
+                <td class="yellow">Tuesday Dec. 16</td>
+                <td class="yellow">Wednesday Dec. 17</td>
+                <td class="yellow">Thursday Dec. 18</td>
+                <td rowspan="5" class="home">HOME</td>
+            </tr>
+            <tr>
+                <td class="gray">8:00 a.m.</td>
+                <td>Data Structures</td>
+                <td>Algorithms</td>
+                <td>Computer Networks</td>
+                <td>Database Systems</td>
+            </tr>
+            <tr>
+                <td class="gray">10:00 a.m.</td>
+                <td>Operating Systems</td>
+                <td>Artificial Intelligence</td>
+                <td>Software Engineering</td>
+                <td>Web Development</td>
+            </tr>
+            <tr>
+                <td class="gray">1:00 p.m.</td>
+                <td>Machine Learning</td>
+                <td>Cyber Security</td>
+                <td>Mobile Computing</td>
+                <td>Human-Computer Interaction</td>
+            </tr>
+            <tr>
+                <td class="gray">3:00 p.m.</td>
+                <td>Big Data Analytics</td>
+                <td>Cloud Computing</td>
+                <td>Parallel Computing</td>
+                <td>Computer Graphics</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
